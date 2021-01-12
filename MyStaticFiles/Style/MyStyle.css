@@ -1,0 +1,35 @@
+﻿.MybotonCalculadora {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.MyBotonCero {
+    width: 100%;
+    margin-top: 5px;
+}
+
+#DivPrincipal {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:lightslategrey;
+    padding:20px;
+
+}
+
+#txtResultadoId {
+    width: 100%;
+    padding: 0px;
+    margin:0px;
+    height: 50px;
+}
+
+h1 {
+    border-color: black;
+    border: solid;
+}
+
+body {
+    background-image: url(http://www.librosweb.es/website/css/images/logo.gif);
+}
+

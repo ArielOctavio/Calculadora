@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="MyStaticFiles\favicon.ico" />
+    <Content Include="MyStaticFiles\js\site.js" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\css\bootstrap-grid.css" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\css\bootstrap-grid.min.css" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\css\bootstrap-reboot.css" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\css\bootstrap-reboot.min.css" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="MyStaticFiles\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <Content Include="MyStaticFiles\lib\bootstrap\LICENSE" />
+    <Content Include="MyStaticFiles\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <Content Include="MyStaticFiles\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <Content Include="MyStaticFiles\lib\jquery-validation-unobtrusive\LICENSE.txt" />
+    <Content Include="MyStaticFiles\lib\jquery-validation\dist\additional-methods.js" />
+    <Content Include="MyStaticFiles\lib\jquery-validation\dist\additional-methods.min.js" />
+    <Content Include="MyStaticFiles\lib\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="MyStaticFiles\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="MyStaticFiles\lib\jquery-validation\LICENSE.md" />
+    <Content Include="MyStaticFiles\lib\jquery\dist\jquery.js" />
+    <Content Include="MyStaticFiles\lib\jquery\dist\jquery.min.js" />
+    <Content Include="MyStaticFiles\lib\jquery\dist\jquery.min.map" />
+    <Content Include="MyStaticFiles\lib\jquery\LICENSE.txt" />
+    <Content Include="MyStaticFiles\Style\MyStyle.css" />
+    <Content Include="MyStaticFiles\Style\site.css" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\imagenes\" />
+    <Folder Include="Views\Style\" />
+    <Folder Include="wwwroot\css\" />
+  </ItemGroup>
+
+
+
+</Project>

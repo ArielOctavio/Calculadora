@@ -1,0 +1,219 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+
+    <h1 class="jumbotron">Calculadora en Html</h1>
+
+    <div id="DivPrincipal">
+        @* -----Text Box Resultado----*@
+        <div class="row">
+            <div class="col-12">
+                <input type="text" id="txtResultadoId" />
+            </div>
+        </div>
+
+
+        <div class="row">
+            @* -----Primera linea de numeros del 7 al 9  ---*@
+            <div class="col-3">
+                <button class="MybotonCalculadora  btn btn-primary btn-sm">7</button>
+            </div>
+            <div class="col-3">
+                <button class="MybotonCalculadora  btn btn-primary btn-sm">8</button>
+            </div>
+            <div class="col-3">
+                <button class="MybotonCalculadora  btn btn-primary btn-sm">9</button>
+            </div>
+            <div class="col-3">
+                <button class="MybotonCalculadora  btn btn-success btn-sm" onclick="Operar('-')">-</button>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            @* ---Segunda linea de numeros del 4 al 6 ----*@
+            <div class="col-3">
+                <button class="MybotonCalculadora btn btn-primary btn-sm">4</button>
+            </div>
+            <div class="col-3">
+                <button class="MybotonCalculadora btn btn-primary btn-sm">5</button>
+            </div>
+            <div class="col-3">
+                <button class="MybotonCalculadora btn btn-primary btn-sm">6</button>
+            </div>
+            <div class="col-3">
+                <button class="MybotonCalculadora btn btn-success btn-sm" onclick="Operar('+')">+</button>
+            </div>
+
+        </div>
+        <div class="row">
+            @* ---tercera linea de numeros del 1 al 3 ----*@
+            <div class="col-3">
+                <button class="MybotonCalculadora btn btn-primary btn-sm" onclick="MostrarNumero(1)">1</button>
+            </div>
+            <div class="col-3">
+                <button class=" MybotonCalculadora btn btn-primary btn-sm" onclick="MostrarNumero(2)">2</button>
+            </div>
+            <div class="col-3">
+                <button class=" MybotonCalculadora btn btn-primary btn-sm" onclick="MostrarNumero('hola')">3</button>
+            </div>
+            <div class="col-3">
+                <button class="MybotonCalculadora btn btn-success btn-sm">/</button>
+            </div>
+
+        </div>
+
+        <div class="row">
+            @*  ---tercera linea de numeros del 1 al 3 ----*@
+            <div class="col-6">
+                <button class="MyBotonCero btn btn-primary btn-sm">0</button>
+            </div>
+            <div class="col-3">
+                <button class="MybotonCalculadora btn btn-success btn-sm" onclick="Operar('x')">x</button>
+            </div>
+            <div class="col-3">
+                <button class="MybotonCalculadora btn btn-success btn-sm" onclick="Operar('=')">=</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- Button trigger modal -->
+<!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Launch demo modal
+</button>-->
+<!-- Modal -->
+<!--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="DivPrincipalModal">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <input type="text" id="txtResultadoId" />
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col-3">
+                                <button class="MybotonCalculadora  btn btn-primary btn-sm">7</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="MybotonCalculadora  btn btn-primary btn-sm">8</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="MybotonCalculadora  btn btn-primary btn-sm">9</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="MybotonCalculadora  btn btn-success btn-sm" onclick="Operar('-')">-</button>
+                            </div>
+
+                        </div>
+
+
+                        <div class="row">
+
+                            <div class="col-3">
+                                <button class="MybotonCalculadora btn btn-primary btn-sm">4</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="MybotonCalculadora btn btn-primary btn-sm">5</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="MybotonCalculadora btn btn-primary btn-sm">6</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="MybotonCalculadora btn btn-success btn-sm" onclick="Operar('+')">+</button>
+                            </div>
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-3">
+                                <button class="MybotonCalculadora btn btn-primary btn-sm" onclick="MostrarNumero(1)">1</button>
+                            </div>
+                            <div class="col-3">
+                                <button class=" MybotonCalculadora btn btn-primary btn-sm" onclick="MostrarNumero(2)">2</button>
+                            </div>
+                            <div class="col-3">
+                                <button class=" MybotonCalculadora btn btn-primary btn-sm" onclick="MostrarNumero('hola')">3</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="MybotonCalculadora btn btn-success btn-sm">/</button>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-6">
+                                <button class="MyBotonCero btn btn-primary btn-sm">0</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="MybotonCalculadora btn btn-success btn-sm" onclick="Operar('x')">x</button>
+                            </div>
+                            <div class="col-3">
+                                <button class="MybotonCalculadora btn btn-success btn-sm" onclick="Operar('=')">=</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+
+<script>
+
+    var textResultado = document.getElementById("txtResultadoId");
+    var primerNumero = null;
+    var operador = null;
+    var segundoNumero = null;
+
+
+    function MostrarNumero(numero) {
+
+        textResultado.value = textResultado.value + numero;
+    }
+
+    function Operar(operador) {
+
+        textResultado.value = "";
+    }
+
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+</script>
+
+
+
+
+
+
